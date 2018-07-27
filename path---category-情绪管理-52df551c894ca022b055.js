@@ -1,0 +1,2 @@
+webpackJsonp([0x71bfd2d8b8e7],{701:function(t,e){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/如何处理自己的负面情绪/"},excerpt:"…",timeToRead:1,frontmatter:{title:"如何处理自己的负面情绪",category:"情绪管理"}}}]},site:{siteMetadata:{facebook:{appId:"123"}}}},pathContext:{category:"情绪管理"}}}});
+//# sourceMappingURL=path---category-情绪管理-52df551c894ca022b055.js.map
