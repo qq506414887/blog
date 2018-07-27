@@ -256,5 +256,5 @@ module.exports = {
       }
     }
   ],
-  pathPrefix: `/eagleliy.github.io/eagleBlog`,
+  pathPrefix: config.pathPrefix,
 };
