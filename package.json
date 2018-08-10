@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-hero-blog",
   "version": "1.0.1",
-  "author": "Eagle Li <greglobinski@gmail.com>",
+  "author": "Greg Lobinski <greglobinski@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "antd": "^3.7.0",
@@ -50,7 +50,6 @@
     "styled-jsx-plugin-stylelint": "^0.1.0",
     "tinycolor2": "^1.4.1",
     "typeface-open-sans": "^0.0.54",
-    "url-loader": "^1.0.1",
     "yaml-loader": "^0.5.0"
   },
   "keywords": [
@@ -58,14 +57,13 @@
   ],
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "develop": "gatsby develop",
     "devhost": "gatsby develop --host 192.168.0.112",
     "format": "prettier --write 'src/**/*.js'",
     "lint-errors": "eslint src/**/*.{js,jsx} --quiet",
     "lint": "eslint src/**/*.{js,jsx}",
     "stylelint": "stylelint src/**/*.js",
-    "generate-app-icons": "sh ./scripts/generate-app-icons.sh",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "generate-app-icons": "sh ./scripts/generate-app-icons.sh"
   },
   "devDependencies": {
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
@@ -83,7 +81,6 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
-    "gh-pages": "^1.2.0",
     "json-loader": "^0.5.7",
     "postcss": "^7.0.0",
     "postcss-cli": "^5.0.1",

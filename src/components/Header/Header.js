@@ -36,15 +36,11 @@ class Header extends React.Component {
     return (
       <React.Fragment>
         <header className={`header ${this.getHeaderSize()}`}>
-          {/* <Link to="/" className="logoType">
+          <Link to="/" className="logoType">
             <div className="logo">
               <img src={avatar} alt={config.siteTitle} />
             </div>
-            <div className="type">
-              <h1>{config.headerTitle}</h1>
-              <h2>{config.headerSubTitle}</h2>
-            </div>
-          </Link> */}
+          </Link>
           <FontLoadedContext.Consumer>
             {loaded => (
               <ScreenWidthContext.Consumer>
@@ -111,7 +107,6 @@ class Header extends React.Component {
           }
 
           .logo {
-            border-radius: 65% 75%;
             border: 1px solid #eee;
             display: inline-block;
             height: 44px;
@@ -159,7 +154,7 @@ class Header extends React.Component {
 
               :global(a.logoType),
               h1 {
-                color: ${theme.color.neutral.gray.d};
+                color: ${theme.color.neutral.white};
               }
               h2 {
                 color: ${theme.color.neutral.gray.d};
@@ -180,7 +175,7 @@ class Header extends React.Component {
 
               &.fixed {
                 height: ${theme.header.height.fixed};
-                background-color: ${theme.color.brand.primary};
+                background-color: ${theme.color.neutral.white};
                 left: 0;
                 padding: 0 ${theme.space.m};
                 position: fixed;
@@ -200,7 +195,7 @@ class Header extends React.Component {
               &.homepage:not(.fixed) {
                 :global(a.logoType),
                 h1 {
-                  color: ${theme.color.neutral.gray.d};
+                  color: ${theme.color.neutral.white};
                 }
                 h2 {
                   color: ${theme.color.neutral.gray.d};

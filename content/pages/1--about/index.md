@@ -2,18 +2,26 @@
 title: About
 ---
 
-Eagle Li
+This is a demo site of the [HeroBlog](https://github.com/greglobinski/gatsby-starter-hero-blog), a [GatsbyJS](https://www.gatsbyjs.org/) starter.
 
-喜欢自己折腾一些感兴趣的小东西
+### Features:
 
-敲起代码不喜欢被打扰
-
-周末喜欢跳跳小舞，或者默默的在家里宅一天，或者在家里睡一天
-
-长假想要出去走走，看看这大好的风光
-
-在别人想着整一个美美的化妆台时，我想最多的是给自己整套大气磅礴的电脑桌
-
-舍不得买几百块钱的衣服，却在买电脑时没有考虑过一不小心花出了上万
-
-邮箱：liying_eagle@163.com
+* Easy editable content in **Markdown** files (posts, pages and parts)
+* **CSS** with `styled-jsx` and `PostCSS`
+* **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
+* **Social** sharing (Twitter, Facebook, Google, LinkedIn)
+* **Comments** (Facebook)
+* **Images** lazy loading and `webp` support (gatsby-image)
+* Post **categories** (category based post list)
+* Full text **searching** (Algolia)
+* **Contact** form (Netlify form handling)
+* **RSS** feed
+* 100% **PWA** (manifest.webmanifest, offline support, favicons)
+* Google **Analytics**
+* App **favicons** generator (node script)
+* Easy customizable base **styles** via `theme` object generated from `yaml` file (fonts, colors, sizes)
+* React **v.16** (gatsby-plugin-react-next)
+* **Components** lazy loading (social sharing)
+* **ESLint** (google config)
+* **Prettier** code styling
+* Webpack `BundleAnalyzerPlugin`

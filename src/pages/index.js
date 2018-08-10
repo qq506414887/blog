@@ -4,9 +4,8 @@ import React from "react";
 import { ThemeContext } from "../layouts";
 import Blog from "../components/Blog";
 import Hero from "../components/Hero";
+import SubHero from "../components/SubHero";
 import Seo from "../components/Seo";
-import subBanner from '../images/png/newBanner.png';
-
 
 class IndexPage extends React.Component {
   separator = React.createRef();
@@ -28,6 +27,15 @@ class IndexPage extends React.Component {
         bgMobile: {
           resize: { src: mobile }
         },
+        subBgDesktop: {
+          resize: { src: subDesktop }
+        },
+        subBgTablet: {
+          resize: { src: subTablet }
+        },
+        subBgMobile: {
+          resize: { src: subMobile }
+        },
         site: {
           siteMetadata: { facebook }
         }
@@ -37,7 +45,10 @@ class IndexPage extends React.Component {
     const backgrounds = {
       desktop,
       tablet,
-      mobile
+      mobile,
+      subDesktop,
+      subTablet,
+      subMobile
     };
 
     return (
@@ -47,9 +58,16 @@ class IndexPage extends React.Component {
             <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
           )}
         </ThemeContext.Consumer>
-        <img className="subBanner" src={subBanner} />
 
-        {/* <hr ref={this.separator} /> */}
+        <hr ref={this.separator} />
+
+        <ThemeContext.Consumer>
+          {/* eslint-disable */}
+          {theme => (
+            <SubHero backgrounds={backgrounds} theme={theme} />
+          )}
+        </ThemeContext.Consumer>
+
         <ThemeContext.Consumer>
           {theme => <Blog posts={posts} theme={theme} />}
         </ThemeContext.Consumer>
@@ -60,11 +78,6 @@ class IndexPage extends React.Component {
           hr {
             margin: 0;
             border: 0;
-          }
-          .subBanner {
-            width: 100%;
-            position: relative;
-            bottom: -6px;
           }
         `}</style>
       </React.Fragment>
@@ -127,6 +140,21 @@ export const guery = graphql`
       }
     }
     bgMobile: imageSharp(id: { regex: "/hero-background/" }) {
+      resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    subBgDesktop: imageSharp(id: { regex: "/sub-hero-background/" }) {
+      resize(width: 1200, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    subBgTablet: imageSharp(id: { regex: "/sub-hero-background/" }) {
+      resize(width: 800, height: 1100, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    subBgMobile: imageSharp(id: { regex: "/sub-hero-background/" }) {
       resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
         src
       }

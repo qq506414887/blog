@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import pintDown from "../../images/gif/point.gif";
+import FaArrowDown from "react-icons/lib/fa/arrow-down";
 
 const Hero = props => {
   const { scrollToContent, backgrounds, theme } = props;
@@ -9,33 +9,19 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <h1>NEXT IS NOW</h1>
-        <p className="bannerDescription">What would happen next ?</p>
-        <button
-          onClick={scrollToContent}
-          aria-label="scroll"
-          className="arrowDownMobile"
-        >
-          <img src={pintDown} width="17"  />
+        <h1> NEXT IS NOW </h1>
+        <button onClick={scrollToContent} aria-label="scroll">
+          <FaArrowDown />
         </button>
       </section>
-      <div className="bannerDownPoint">
-        <button
-          onClick={scrollToContent}
-          aria-label="scroll"
-          className="arrowDownDesktop"
-        >
-          <img src={pintDown} width="17"  />
-        </button>
-      </div>
+
       {/* --- STYLES --- */}
       <style jsx>{`
         .hero {
           align-items: center;
-          background: ${theme.hero.background};
+          background: ${theme.hero.background} no-repeat;
           background-image: url(${backgrounds.mobile});
           background-size: 100%;
-          background-repeat: no-repeat;
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
@@ -49,7 +35,7 @@ const Hero = props => {
         h1 {
           text-align: center;
           font-size: ${theme.hero.h1.size};
-          margin: ${theme.space.stack.m};
+          margin: ${theme.space.stack.l};
           color: ${theme.hero.h1.color};
           line-height: ${theme.hero.h1.lineHeight};
           text-remove-gap: both 0 "Open Sans";
@@ -71,29 +57,15 @@ const Hero = props => {
           }
         }
 
-        .bannerDescription {
-          color: ${theme.hero.h1.color};
-          font-size: 20px;
-          font-weight: 300;
-          margin: ${theme.space.stack.l};
-        }
-
-        .arrowDownMobile {
-          display: block;
-        }
-
-        .bannerDownPoint {
-          text-align: center;
-          display: none;
-        }
-
         button {
+          background: ${theme.background.color.brand};
           border: 0;
           border-radius: 50%;
           font-size: ${theme.font.size.m};
           padding: ${theme.space.s} ${theme.space.m};
           cursor: pointer;
-          background-color: rgba(255, 255, 2355, 0);
+          width: ${theme.space.xl};
+          height: ${theme.space.xl};
 
           &:focus {
             outline-style: none;
@@ -121,8 +93,8 @@ const Hero = props => {
         }
 
         @from-width tablet {
-          
           .hero {
+            min-height: 80vh;
             background-image: url(${backgrounds.tablet});
           }
 
@@ -139,21 +111,11 @@ const Hero = props => {
         @from-width desktop {
           .hero {
             background-image: url(${backgrounds.desktop});
-            min-height: 75vh;
-            padding-bottom: 0;
           }
 
           h1 {
             max-width: 80%;
             font-size: ${`calc(${theme.hero.h1.size} * 1.5)`};
-          }
-
-          .arrowDownMobile {
-            display: none;
-          }
-
-          .bannerDownPoint {
-            display: block;
           }
 
           button {
