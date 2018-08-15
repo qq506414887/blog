@@ -26,6 +26,7 @@ const Blog = props => {
       <style jsx>{`
         .main {
           padding: 0 ${theme.space.inset.default};
+          background-color: #1c1c1c;
         }
 
         ul {
@@ -44,7 +45,7 @@ const Blog = props => {
         }
         @above desktop {
           ul {
-            max-width: ${theme.text.maxWidth.desktop};
+            max-width: 1024px;
           }
         }
       `}</style>

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import bannerSmall from "../../images/png/banner-small.png";
 
 const Hero = props => {
   const { backgrounds, theme } = props;
@@ -7,23 +8,29 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <h1> NEXT IS NOW </h1>
+        <img src={bannerSmall} className="bannerSmall" />
       </section>
       {/* --- STYLES --- */}
       <style jsx>{`
+        .bannerSmall {
+          width: 73vw;
+        }
+
         .hero {
           align-items: center;
           background-image: url(${backgrounds.subMobile});
           background: no-repeat;
-          background-size: 100%;
+          background-size: 100% 100%;
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
-          min-height: 100vh;
+          min-height: 90vh;
           height: 100px;
+          box-sizing: border-box;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
+          margin-top: 10vh;
         }
 
         h1 {
@@ -104,6 +111,12 @@ const Hero = props => {
         @from-width desktop {
           .hero {
             background-image: url(${backgrounds.subDesktop});
+            padding-top: 10vw;
+            box-sizing: border-box;
+          }
+
+          .bannerSmall {
+            width: 73vw;
           }
 
           h1 {

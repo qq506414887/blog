@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import FaArrowDown from "react-icons/lib/fa/arrow-down";
+import point from "../../images/gif/point.gif";
 
 const Hero = props => {
   const { scrollToContent, backgrounds, theme } = props;
@@ -11,7 +11,7 @@ const Hero = props => {
       <section className="hero">
         <h1> NEXT IS NOW </h1>
         <button onClick={scrollToContent} aria-label="scroll">
-          <FaArrowDown />
+          <img src={point} />
         </button>
       </section>
 
@@ -58,7 +58,7 @@ const Hero = props => {
         }
 
         button {
-          background: ${theme.background.color.brand};
+          background: rgba(0, 0, 0, 0);
           border: 0;
           border-radius: 50%;
           font-size: ${theme.font.size.m};
@@ -69,7 +69,6 @@ const Hero = props => {
 
           &:focus {
             outline-style: none;
-            background: ${theme.color.brand.primary.active};
           }
 
           :global(svg) {
@@ -114,11 +113,13 @@ const Hero = props => {
           }
 
           h1 {
+            padding-top: 10vw;
             max-width: 80%;
             font-size: ${`calc(${theme.hero.h1.size} * 1.5)`};
           }
 
           button {
+            margin-top: 20vw;
             font-size: ${theme.font.size.xl};
           }
         }

@@ -5,7 +5,8 @@ import { ThemeContext } from "../layouts";
 import Blog from "../components/Blog";
 import Hero from "../components/Hero";
 import SubHero from "../components/SubHero";
-import Seo from "../components/Seo";
+import SubFooter from "../components/SubFooter";
+// import Seo from "../components/Seo";
 
 class IndexPage extends React.Component {
   separator = React.createRef();
@@ -68,11 +69,13 @@ class IndexPage extends React.Component {
           )}
         </ThemeContext.Consumer>
 
+
         <ThemeContext.Consumer>
           {theme => <Blog posts={posts} theme={theme} />}
         </ThemeContext.Consumer>
-
-        <Seo facebook={facebook} />
+        <ThemeContext.Consumer>
+          {theme => <SubFooter />}
+        </ThemeContext.Consumer>
 
         <style jsx>{`
           hr {
