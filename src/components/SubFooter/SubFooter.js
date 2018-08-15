@@ -124,7 +124,7 @@ class SubFooter extends React.Component {
             & h4 {
               font-size: 20px;
               color: #fff;
-              padding: 20px 20px;
+              padding: 20px;
               font-weight: 300;
             }
           }

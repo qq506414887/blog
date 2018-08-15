@@ -20,8 +20,8 @@ const Hero = props => {
         .hero {
           position: relative;
           align-items: center;
-          background-image: url(${backgrounds.subMobile});
           background: no-repeat;
+          background-image: url(${backgrounds.subMobile});
           background-size: 100% 100%;
           color: ${theme.text.color.primary.inverse};
           display: flex;
