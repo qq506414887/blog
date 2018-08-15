@@ -2,7 +2,6 @@ import FaAngleRight from "react-icons/lib/fa/angle-right";
 import FaCalendar from "react-icons/lib/fa/calendar";
 import FaTag from "react-icons/lib/fa/tag";
 import FaUser from "react-icons/lib/fa/user";
-import Img from "gatsby-image";
 import Link from "gatsby-link";
 import PropTypes from "prop-types";
 import React from "react";
@@ -42,7 +41,7 @@ const Item = props => {
               </span>
             )}
           </p>
-          <p>{excerpt}</p>
+          <p className="description">{excerpt}</p>
           <Link to={slug} key={slug} className="link">
             阅读更多 <FaAngleRight />
           </Link>
@@ -56,12 +55,13 @@ const Item = props => {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 130px;
-          height: 44px;
+          width: 70%;
+          height: 40px;
           border: 1px solid #fff;
           color: #fff;
           margin: 0 ${theme.space.s} 10px;
           transition: all ${theme.time.duration.default};
+          font-size: 14px;
         }
 
         .img {
@@ -106,9 +106,10 @@ const Item = props => {
         h1 {
           padding: ${theme.space.m} ${theme.space.s} 0;
           line-height: ${theme.blog.h1.lineHeight};
-          font-size: ${theme.blog.h1.size};
+          font-size: 1.3em;
           text-remove-gap: both;
           color: #fff;
+          font-weight: 500;
 
           :global(.arrow) {
             display: none;
@@ -138,6 +139,11 @@ const Item = props => {
           padding: 10px ${theme.space.s};
           text-remove-gap: both;
           color: #fff;
+          font-size: 14px;
+        }
+
+        .description {
+          padding-bottom: 20px;
         }
 
         @from-width tablet {
@@ -160,6 +166,9 @@ const Item = props => {
           }
 
           :global(.link) {
+            width: 130px;
+            height: 44px;
+            font-size: 16px;
             margin: ${`0 ${theme.space.default} 0`};
           }
           h1 {
@@ -171,6 +180,7 @@ const Item = props => {
             padding: ${`calc(${theme.space.m} * 1.5) ${theme.space.m}`};
           }
           p {
+            font-size: 16px;
             padding: ${theme.space.default};
           }
         }

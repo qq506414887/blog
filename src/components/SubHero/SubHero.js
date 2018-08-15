@@ -4,11 +4,12 @@ import bannerSmall from "../../images/png/banner-small.png";
 
 const Hero = props => {
   const { backgrounds, theme } = props;
-  console.log(backgrounds);
+
   return (
     <React.Fragment>
       <section className="hero">
         <img src={bannerSmall} className="bannerSmall" />
+        <img className="bannerBgSmall" src={backgrounds.subMobile} />
       </section>
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -17,6 +18,7 @@ const Hero = props => {
         }
 
         .hero {
+          position: relative;
           align-items: center;
           background-image: url(${backgrounds.subMobile});
           background: no-repeat;
@@ -25,12 +27,15 @@ const Hero = props => {
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
-          min-height: 90vh;
+          min-height: 50vh;
           height: 100px;
           box-sizing: border-box;
-          padding: ${theme.space.inset.l};
-          padding-top: ${theme.header.height.homepage};
-          margin-top: 10vh;
+        }
+
+        .bannerBgSmall {
+          position: absolute;
+          top: 0;
+          z-index: -1;
         }
 
         h1 {
@@ -95,7 +100,13 @@ const Hero = props => {
 
         @from-width tablet {
           .hero {
+            min-height: 60vh;
+            margin-top: 10vh;
             background-image: url(${backgrounds.subTablet});
+          }
+
+          .bannerBgSmall {
+            display: none;
           }
 
           h1 {
@@ -110,6 +121,7 @@ const Hero = props => {
 
         @from-width desktop {
           .hero {
+            min-height: 90vh;
             background-image: url(${backgrounds.subDesktop});
             padding-top: 10vw;
             box-sizing: border-box;
