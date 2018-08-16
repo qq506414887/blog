@@ -1,0 +1,2 @@
+webpackJsonp([0x9b544cfa2a85],{496:function(s,a){s.exports={data:{page:{id:"/Users/liying/blog/content/pages/success/index.md absPath of file >>> MarkdownRemark",html:"<p>Thank you. <br />\nI will answer to your message as soon as possible.</p>",frontmatter:{title:"Success"}},site:{siteMetadata:{facebook:{appId:"123"}}}},pathContext:{slug:"/success/"}}}});
+//# sourceMappingURL=path---success-0d8d1a60563d3869afdc.js.map

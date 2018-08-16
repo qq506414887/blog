@@ -1,0 +1,2 @@
+webpackJsonp([0xd94334189348],{488:function(t,e){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/10分钟，打造属于你的人物插画/"},excerpt:"矢量人物插画在UI设计中的地位不对攀升。 DCU设计团队联合成员erics…",timeToRead:1,frontmatter:{title:"10分钟，打造属于你的人物插画",category:"UI"}}}]},site:{siteMetadata:{facebook:{appId:"123"}}}},pathContext:{category:"UI"}}}});
+//# sourceMappingURL=path---category-ui-9c6cee6ed03c0617b8b7.js.map

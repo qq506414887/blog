@@ -1,66 +1,66 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-0c1f516e4179192dfd92.js",
-      "component---src-pages-index-js-0c1f516e4179192dfd92.js.map"
+      "component---src-pages-index-js-9073d96468346f9046c4.js",
+      "component---src-pages-index-js-9073d96468346f9046c4.js.map"
     ],
     "path---": [
-      "path----5aa77170f335093489aa.js",
-      "path----5aa77170f335093489aa.js.map"
-    ],
-    "path---如何处理自己的负面情绪": [
-      "path---如何处理自己的负面情绪-c00a873958f7e08da0e6.js",
-      "path---如何处理自己的负面情绪-c00a873958f7e08da0e6.js.map"
+      "path----92415f3e8a692cd01f01.js",
+      "path----92415f3e8a692cd01f01.js.map"
     ],
     "component---src-pages-contact-js": [
-      "component---src-pages-contact-js-58cd4126a89ef750ec04.js",
-      "component---src-pages-contact-js-58cd4126a89ef750ec04.js.map"
+      "component---src-pages-contact-js-76f199ff7fa20e5de95b.js",
+      "component---src-pages-contact-js-76f199ff7fa20e5de95b.js.map"
     ],
     "component---src-templates-category-template-js": [
-      "component---src-templates-category-template-js-bf37b870253df70c49b0.js",
-      "component---src-templates-category-template-js-bf37b870253df70c49b0.js.map"
+      "component---src-templates-category-template-js-ccbdb357ea067077af6d.js",
+      "component---src-templates-category-template-js-ccbdb357ea067077af6d.js.map"
+    ],
+    "path---terms": [
+      "path---terms-3c808ed5c84f60e8bf53.js",
+      "path---terms-3c808ed5c84f60e8bf53.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-386d59b09c6f25be8801.js",
-      "component---src-layouts-index-js-386d59b09c6f25be8801.js.map"
+      "component---src-layouts-index-js-04f5cd1ad212aa2d9484.js",
+      "component---src-layouts-index-js-04f5cd1ad212aa2d9484.js.map"
     ],
     "path---category": [
-      "path---category-1b5d6d77bbc77ee9d4ae.js",
-      "path---category-1b5d6d77bbc77ee9d4ae.js.map"
+      "path---category-126a0d5339c33a7f96e8.js",
+      "path---category-126a0d5339c33a7f96e8.js.map"
     ],
     "component---src-pages-category-js": [
       "component---src-pages-category-js-bbb34571e9395b2ce79b.js",
       "component---src-pages-category-js-bbb34571e9395b2ce79b.js.map"
     ],
-    "path---category-情绪管理": [
-      "path---category-情绪管理-52df551c894ca022b055.js",
-      "path---category-情绪管理-52df551c894ca022b055.js.map"
-    ],
     "path---index": [
-      "path---index-e96479e8bed1aeccc8b0.js",
-      "path---index-e96479e8bed1aeccc8b0.js.map"
-    ],
-    "component---src-pages-search-js": [
-      "component---src-pages-search-js-32a9df8e64ecdde8ba1f.js",
-      "component---src-pages-search-js-32a9df8e64ecdde8ba1f.js.map"
+      "path---index-c22863395a6b5b539040.js",
+      "path---index-c22863395a6b5b539040.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-cf325d2e9bf981eec2f6.js",
       "component---src-pages-404-js-cf325d2e9bf981eec2f6.js.map"
     ],
+    "path---10-分钟，打造属于你的人物插画": [
+      "path---10-分钟，打造属于你的人物插画-7f0f3f903ea8540d5f90.js",
+      "path---10-分钟，打造属于你的人物插画-7f0f3f903ea8540d5f90.js.map"
+    ],
+    "path---privacy": [
+      "path---privacy-1db799607a0392806e4a.js",
+      "path---privacy-1db799607a0392806e4a.js.map"
+    ],
     "commons": [
-      "commons-3de4dfbd06911003e45a.js",
+      "commons-89481266082adf91234d.js",
       "build-js-styles.css",
-      "commons-3de4dfbd06911003e45a.js.map",
+      "commons-89481266082adf91234d.js.map",
       "build-js-styles.css.map"
     ],
     "path---success": [
-      "path---success-046be55ca2bdf2662d61.js",
-      "path---success-046be55ca2bdf2662d61.js.map"
+      "path---success-0d8d1a60563d3869afdc.js",
+      "path---success-0d8d1a60563d3869afdc.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -71,34 +71,42 @@
       "path---contact-5b2cdcd9eb2584bd8e8d.js.map"
     ],
     "component---src-templates-post-template-js": [
-      "component---src-templates-post-template-js-47e12e8c4692f73e953f.js",
-      "component---src-templates-post-template-js-47e12e8c4692f73e953f.js.map"
+      "component---src-templates-post-template-js-3679b3771fb3b64b7321.js",
+      "component---src-templates-post-template-js-3679b3771fb3b64b7321.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---starters": [
+      "path---starters-5927dd24d5c8fd53d650.js",
+      "path---starters-5927dd24d5c8fd53d650.js.map"
+    ],
     "app": [
-      "app-032362955cc9ee068f68.js",
+      "app-195da32ac53f8567baca.js",
       "build-js-styles.css",
-      "app-032362955cc9ee068f68.js.map",
+      "app-195da32ac53f8567baca.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---front-end-dev": [
+      "path---front-end-dev-931932b84a335d18fcb1.js",
+      "path---front-end-dev-931932b84a335d18fcb1.js.map"
     ],
     "component---src-templates-page-template-js": [
       "component---src-templates-page-template-js-277489605b32655c14af.js",
       "component---src-templates-page-template-js-277489605b32655c14af.js.map"
     ],
+    "path---category-ui": [
+      "path---category-ui-9c6cee6ed03c0617b8b7.js",
+      "path---category-ui-9c6cee6ed03c0617b8b7.js.map"
+    ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---search": [
-      "path---search-78e0a3f97547157edd97.js",
-      "path---search-78e0a3f97547157edd97.js.map"
-    ],
     "path---about": [
-      "path---about-26354f72d138afc18219.js",
-      "path---about-26354f72d138afc18219.js.map"
+      "path---about-24bb77698ebda48130a2.js",
+      "path---about-24bb77698ebda48130a2.js.map"
     ]
   }
 }
